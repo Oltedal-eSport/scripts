@@ -1,4 +1,4 @@
-params($user, $pass)
+params($name, $pass)
 Install-Module -Name LocalAccounts -AllowClobber -Force
 # import-module microsoft.powershell.localaccounts -SkipEditionCheck
 $securePass = ConvertTo-SecureString -String $pass -AsPlainText;
