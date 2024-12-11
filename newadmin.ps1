@@ -4,3 +4,4 @@ Install-Module -Name LocalAccounts -AllowClobber -Force
 $securePass = ConvertTo-SecureString -String $pass -AsPlainText;
 $user = New-LocalUser -Name $name -Password $securePass
 Add-LocalGroupMember -Group "Administratorer" -Member $user
+Remove-LocalGroupMember -Group "Administratorer" -Member "Greencom"
