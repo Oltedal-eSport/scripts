@@ -1,0 +1,1 @@
+New-NetFireWallRule -Name Fucknite -Description "Make the world a better place" -Enabled True -Profile Any -Direction Outbound -Action Block -Program "C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\FortniteClient-Win64-Shipping.exe" -DisplayName Fucknite
